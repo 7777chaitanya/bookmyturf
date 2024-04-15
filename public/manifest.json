@@ -20,5 +20,14 @@
   "display": "standalone",
   "theme_color": "#3367D6",
   "description": "Book a turf in your locality",
-  "id": "BookMyTurfAppIndia"
+  "id": "BookMyTurfAppIndia",
+  "orientation": "any",
+  "screenshots": [
+    {
+      "src": "/appScreenshot.png",
+      "sizes": "2880x1800",
+      "type": "image/png",
+      "description": "A screenshot of the home page"
+    }
+  ]
 }
