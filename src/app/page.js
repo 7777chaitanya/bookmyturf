@@ -13,6 +13,9 @@ export default function Home() {
     <div>
       <input type="text" onChange={(e)=>{setName(e.target.value)}}/>
       <h1>Hello {name}</h1>
+      <script defer data-domain="bookmyturf.app" src="https://plausible.io/js/script.js"></script>
+
+
     </div>
   );
 }
