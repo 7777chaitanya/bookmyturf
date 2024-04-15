@@ -29,5 +29,20 @@
       "type": "image/png",
       "description": "A screenshot of the home page"
     }
+  ],
+  "lang": "English",
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://bookmyturf.vercel.app/"
+    }
+  ],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Book My Turf",
+      "url": "/",
+      "description": "Open Book My Turf"
+    }
   ]
 }
