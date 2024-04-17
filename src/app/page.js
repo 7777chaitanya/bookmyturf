@@ -20,7 +20,7 @@ export default function Home() {
       <h1>Hello {name}</h1>
       <script defer src="https://plausible.io/js/script.js"></script>
 
-      <script defer src="http://localhost:3000/script.js"></script>
+      <script defer src="/script.js"></script>
     </div>
   );
 }
