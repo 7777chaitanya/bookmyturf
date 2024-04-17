@@ -228,3 +228,10 @@
     transform: rotate(0deg);
   }
 }
+
+.map-container path {
+  stroke-width: 30px; /* Adjust the thickness as needed */
+}
+
+
+

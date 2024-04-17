@@ -9,7 +9,8 @@ export async function GET(req) {
     req,
     req.headers.get("x-forwarded-for"),
     __dirname,
-    process.cwd()
+    process.cwd(),
+    req.headers.get("user-agent")
   );
   let ip = req.headers.get("x-forwarded-for");
 
