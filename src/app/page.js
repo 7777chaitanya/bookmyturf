@@ -1,21 +1,26 @@
-'use client'
+"use client";
 // import Image from "next/image";
 // import styles from "./page.module.css";
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from "react";
 
 export default function Home() {
-  const [name, setName] = useState('');
-  
+  const [name, setName] = useState("");
+
   // useEffect(() => {
   //   navigator.serviceWorker.register('/serviceWorker.js')
   // }, []);
   return (
     <div>
-      <input type="text" onChange={(e)=>{setName(e.target.value)}}/>
+      <input
+        type="text"
+        onChange={(e) => {
+          setName(e.target.value);
+        }}
+      />
       <h1>Hello {name}</h1>
-      <script defer data-domain="bookmyturf.app" src="https://plausible.io/js/script.js"></script>
+      <script defer src="https://plausible.io/js/script.js"></script>
 
-
+      <script defer src="http://localhost:3000/script.js"></script>
     </div>
   );
 }
