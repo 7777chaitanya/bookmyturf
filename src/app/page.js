@@ -43,7 +43,7 @@ export default function Home() {
       <div style={{width: '600px', height: '600px', overflow: 'hidden',position: 'absolute'}} className={styles.mapContainer}>
       <WorldMap
         color="#6366f1"
-        title="Top 10 Populous Countries"
+        title={<h1>Top 10 Populous Countries</h1>}
         value-suffix="people"
         size="lg"
         data={data}

@@ -12,7 +12,8 @@ export async function GET(req) {
     process.cwd(),
     req.headers.get("user-agent")
   );
-  let ip = req.headers.get("x-forwarded-for");
+  // let ip = req.headers.get("x-forwarded-for");
+  let ip = "2406:7400:45:66f:45dd:76c4:9f90:41ab"
 
   // let lookupResult = undefined;
 
@@ -40,6 +41,8 @@ export async function GET(req) {
   //   }
   // );
 
+  // reading country and city
+
   const dbBuffer = fs.readFileSync(
     `${process.cwd()}/src/app/api/GeoLite2-City.mmdb`
   );
@@ -47,6 +50,16 @@ export async function GET(req) {
   const response = reader.city(ip);
 
   console.log("RESPONSE CITY CODE", response, response.country, response.city);
+
+  // reading asn
+
+  const dbBufferasn = fs.readFileSync(
+    `${process.cwd()}/src/app/api/GeoLite2-ASN.mmdb`
+  );
+  const readerasn = Reader.openBuffer(dbBufferasn);
+  const responseasn = readerasn.asn(ip);
+
+  console.log("RESPONSE ASN", responseasn);
 
   return NextResponse.json({
     status: "Page land event Logged",
