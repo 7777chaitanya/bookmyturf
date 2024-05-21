@@ -7,7 +7,7 @@ export const metadata = {
   title: "Book My Turf",
   description: "Book a Turf for your squad in your locality",
   manifest: "/manifest.json",
-  themeColor: "#317EFB"
+  themeColor: "#317EFB",
 };
 
 export default function RootLayout({ children }) {
@@ -16,7 +16,13 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="theme-color" content="#317EFB" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <script
+          defer
+          src="https://siteinsights-xyz.vercel.app/js/script.js"
+        ></script>
+        {children}
+      </body>
     </html>
   );
 }
